@@ -1,0 +1,126 @@
+*{
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    background-color: rgb(243, 245, 248);
+}
+
+.headerText{
+    display: flex;
+    justify-content: center;
+}
+
+.mainHeader{
+    display: inline-flex;
+    font-size: 48px;
+    color: rgb(150, 225, 36);
+    text-decoration: none;
+    padding: 16px 18px;
+    -webkit-text-stroke: 1px black;
+    cursor: default;
+}
+
+.mainHeader:hover{
+    color: rgb(109, 163, 28);
+}
+
+navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.nav-link a{
+    margin: 0 3em;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+    -webkit-text-stroke: 1px black;
+    cursor: pointer;
+}
+
+.gameButton a{
+    text-decoration: none;
+    color:white;
+}
+
+.gameContainer h2{
+    display: inline-flex;
+    font-size: 36px;
+    color: rgb(224, 92, 92);
+}
+
+.gameContainer h2:hover{
+    color: rgb(171, 49, 49);
+}
+
+.gameContainerHeader{
+    display: flex;
+    justify-content: center;
+    -webkit-text-stroke: 1px black;
+    cursor: default;
+}
+
+.games{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game{
+    display: flex;
+    flex: 1 0 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    width: 460px;
+    height: 440px;
+}
+
+.gameButton{
+    font-weight: bold;
+    padding: 10px 12px;
+    color: white;
+    border-radius: 16px;
+}
+
+.gameName{
+    font-size: 24px;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    cursor: default;
+}
+
+.game:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.blinking{
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+hr{
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-text-stroke: 1px black;
+    font-size: 20px;
+    cursor: default;
+}
